@@ -1,0 +1,168 @@
+*{
+	font-family: sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+.hat{
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	position: sticky;
+	top: 0;
+}
+.hat a{
+	color: white;
+	font-size: 22px;
+	text-decoration: none;
+}
+.hat a:hover{
+	color: #ffcc00;
+	text-shadow: 0 0 10px #ffcc00;
+}
+body{
+	margin: 0;
+}
+.info{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 150px;
+	padding-right: 150px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.info p{
+	margin: 0;
+	font-size: 24px;
+}
+.info h1{
+	margin: 0;
+}
+button{
+	background: #ffcc00;
+	font-size: 22px;
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: none;
+	border-radius: 20px;
+	transition: 0.5s;
+	cursor: pointer;
+}
+button:hover{
+	box-shadow: 10px 10px 15px grey;
+}
+.promo{
+	padding: 200px 300px;
+
+	background: url(img/promo_bg.png);
+	background-size: cover;
+	background-position: 50% 50%;
+	display: flex;
+	justify-content: space-between;
+}
+.promo_work{
+	width: 300px;
+}
+.promo_work h2{
+	font-size: 40px;
+}
+.promo_pay{
+	width: 400px;
+}
+.promo_pay p{
+	font-size: 24px;
+}
+.promo_pay b{
+	font-size: 60px;
+}
+.comfort{
+	padding: 50px 300px;
+}
+h2{
+	font-size: 40px;
+}
+.comfort_box{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.comfort_item{
+	width: 32%;
+}
+.comfort_item img{
+	height: 50px;
+}
+.comfort_item h3{
+	font-size: 24px;
+}
+p{
+	font-size: 20px;
+}
+
+.rent{
+	padding: 50px 300px;
+}
+.rent_box{
+	display: flex;
+	justify-content: space-between;
+}
+.rent_box img{
+	width: 400px;
+}
+.red{
+	color: red;
+}
+
+.begin{
+	padding: 50px 300px;
+	background: #424242;
+	color: white;
+}
+.begin_item{
+
+}
+.begin_circle{
+	background: #ffcc00;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	color: #424242;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 26px;
+	font-weight: 700;
+}
+.city{
+	padding: 50px 300px;
+}
+.city_box{
+	display: flex;
+	justify-content: space-between;
+}
+.city_box_item{
+
+}
+.city_box_item a{
+	display: block;
+	margin-top: 15px;
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+.city_box_item a:hover{
+	color: red;
+}
+.footer{
+	background: #000;
+	padding: 50px 300px;
+	color: white;
+	text-align: center;
+}

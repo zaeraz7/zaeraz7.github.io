@@ -1,0 +1,34 @@
+h1{
+	text-align: center;
+}
+body{
+	margin: 0;
+}
+.box{
+	display: flex;
+	justify-content: space-between;
+	padding: 30px 250px;
+}
+.box_link{
+	display: block;
+	background-color: white;
+	border: 2px solid lightgray;
+	height: 350px;
+	width: 500px;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	transition: 0.5s
+}
+.box_link:hover{
+	border: 2px solid gray;
+	border-radius: 20px;
+	box-shadow: 10px 10px 10px;
+	transform: scale(1.05);
+}
+.box_link img{
+ 	height: 200px;
+}
+.box_link h2{
+
+}

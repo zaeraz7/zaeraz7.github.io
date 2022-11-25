@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	font-family: sans-serif;
+}
+h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+.hat{
+	padding: 10px 200px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: white;
+	box-shadow: 0 0 10px gray;
+}
+.hat img{
+	height: 50px;
+}
+.links{
+	display: flex;
+	justify-content: space-between;
+	width: 60%;
+}
+.links a{
+	color: black;
+	font-size: 18px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+.links a:hover{
+	color: red;
+}
+.basket{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 6%;
+}
+.basket img{
+	height: 30px;
+	cursor: pointer;
+}
+.promo{
+	height: 570px;
+	background: url(img/bg_prev.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}
+.promo_link{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.attention{
+	height: 150px;
+	background: url(img/bg_prev2.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+}.rec{
+	padding: 50px 200px;
+}
+.rec_container{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.rec_card{
+	box-shadow: 0 0 10px darkgray;
+	padding: 30px;
+	width: 15%;
+	text-align: center;
+}
+.rec_card img{
+	height: 150PX;
+}
+.rec_card h3{
+	text-transform: uppercase;
+	font-size: 20px;
+	margin-top: 30px;
+}
+.rec_card .old_price{
+	margin-top: 20px;
+	color: gray;
+	font-size: 22px;
+	text-decoration: line-through;
+}
+.rec_card .new_price{
+	margin-top: 10px;
+	color: red;
+	font-size: 26px;
+	font-weight: 700;
+}
+.rec_card button{
+	padding: 10px 50px;
+	background: white;
+	margin-top: 20px;
+	text-transform: uppercase;
+	color: red;
+	font-weight: 700;
+	border: 2px solid red;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 5px;
+}
+.rec_card button:hover{
+	background: red;
+	color: white;
+}
+.smi{
+	background: rgb(205,205,205);
+	padding: 50px 200px;
+}
+.smi_box{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+.smi_item{
+	width: 350px;
+	height: 250px;
+	background-color: rgb(255,255,255);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	color: rgba(0,0,0,0);
+	border-radius: 10px;
+	transition: 0.5s;
+}
+.smi_item:hover{
+	background-position: 50% 10%;
+	color: black;
+	box-shadow: 0px 0px 10px red;
+}
+.mania{
+	background-image: url(img/mania.png);
+}
+.sostav{
+	background-image: url(img/sostav.png);
+}
+.progamer{
+	background-image: url(img/progamer.png);
+}
+.footer{
+	padding: 50px;
+	color: white;
+	text-align: center;
+	background: black;
+}
