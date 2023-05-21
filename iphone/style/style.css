@@ -1,0 +1,277 @@
+*{
+	margin: 0;					/*внешний отступ*/
+	font-family: sans-serif;	/*семейство шрифтов*/
+}
+.hat{
+	background-color: black;	/*цвет заднего фона*/
+	display: flex;				/*выравнивание содержимого*/
+	justify-content: space-between;	/*выравнивание по горизонтали*/
+	align-items: center;		/*выравнивание по вертикали*/
+	padding-left: 200px;		/*внутренний отступ слева*/
+	padding-right: 200px;		/*внутренний отступ справа*/
+	padding-top: 10px;			/*внутренний отступ сверху*/
+	padding-bottom: 10px;		/*внутренний отступ снизу*/
+	position: sticky;
+	top: 0px;
+	z-index: 9999;
+}
+.hat a{
+	color: white;				/*цвет шрифта*/
+	font-size: 14px;			/*размер шрифта*/
+	text-decoration: none;		/*убрать подчёркивания*/
+	opacity: 75%;				/*прозрачность*/
+	transition: 0.3s;			/*Продолжительность hover*/
+}
+.hat a:hover{
+	opacity: 100%;				/*прозрачность*/		
+}
+.hat img{
+	height: 16px;				/*высота*/
+}
+.promo{
+	height: 600px;				/*высота*/
+	text-align: center;			/*выравнивание текста*/
+	padding-top: 40px;			/*внутренний отступ сверху*/
+	background-repeat: no-repeat;/*повторение заднего фона*/
+	background-position: 50% 50%;/*позиционирование заднего фона*/
+	background-size: cover;		/*размер заднего фона*/
+}
+.promo h2{
+	font-size: 48px;			/*размер шрифта*/
+}
+.promo h3{
+	font-size: 28px;			/*размер шрифта*/
+	font-weight: 100;			/*жирность шрифта*/
+	margin-bottom: 15px;		/*внешний отступ снизу*/
+}
+.promo a{
+	font-size: 18px;			/*размер шрифта*/
+	text-decoration: none;		/*убираем подчёркивания*/
+	color: #0066cc;				/*цвет шрифта*/
+}
+.promo a:hover{					/*меняем элемент при наведении мышки*/
+	text-decoration: underline;	/*подчёркивание*/
+}
+.iphone13pro{
+	background-image: url(img/iphone13.jpg);/*картинка на заднем фоне*/
+}
+.iphone13{
+	background-image: url(img/hero_iphone.jpg);
+}
+.iphone13 h2{
+	color: white;
+}
+.iphone13 h3{
+	color: #fec2eb;
+}
+.watch{
+	background-image: url(img/apple_watch.jpg);
+}
+
+
+
+
+
+.promo_container{
+	display: flex;
+}
+.promo_little{
+	width: 50%;
+}
+.macbook{
+	background-image: url(img/macbookpro.jpg);
+}
+.ipad{
+	background-image: url(img/promo_ipad.jpg);
+	color: white;
+}
+.airpods{
+	background-image: url(img/airpods.jpg);
+}
+.airpods h2{
+	margin-top: 350px;
+}
+.fitness{
+	background-image: url(img/runner.jpg);
+}
+.music{
+	background-image: url(img/many-people.jpg);
+	color: white;
+}
+.tv{
+	background-image: url(img/worker.jpg);
+	color: white;
+}
+.tv h2{
+	margin-top: 400px;
+}
+.footer{
+	padding: 30px 300px;
+}
+.footer_info p{
+	color: gray;
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+.footer_row{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0;
+}
+.footer_column{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+.footer_column h4{
+	color: gray;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.footer_column a{
+	color: gray;
+	text-decoration: none;
+	margin-bottom: 5px;
+}
+
+
+.store{
+	background-color: black;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	color: white;
+	text-align: center;
+	padding-top: 150px;
+}
+.store h1{
+	font-size: 60px;
+	margin-top: 50px;
+}
+.store p{
+	font-size: 16px;
+	color: grey;
+	margin-top: 250px;
+}
+.store video{
+	height: 300px;
+}
+.container{
+	padding: 0px 300px;
+}
+
+.mac_category{
+	background-color: #f1f1f1;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 300px;
+}
+.mac_category a{
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 14px;
+	transition: 0.3s;
+	display: block;
+	width: 100%;
+}
+.mac_category a:hover{
+	color: #0066cc;
+	transform: scale(1.15);
+}
+.mac_category a img{
+	height: 50px;
+}
+.accs{
+	height: 600px;
+	background-image: url(img/accs.jpg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 200px;
+	background-color: #f2f2f2;
+	text-align: center;
+	padding-top: 50px;
+	margin-top: 50px;
+	border-radius: 20px;
+	box-shadow: 0px 0px 10px lightgray;
+	transition: 0.2s;
+}
+.accs:hover{
+	transform: scale(1.02);
+}
+.accs h2{
+	font-size: 25px;
+}
+.accs h3{
+	font-size: 42px;
+}
+
+
+.delivery{
+	height: 500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+}
+.delivery h4{
+	margin-top: 20px;
+}
+.delivery p{
+	width: 300px;
+	margin-top: 10px;
+}
+.delivery a{
+	margin-top: 10px;
+	color: #0066cc;
+	text-decoration: none;
+}
+.opp{
+	background-image: url(img/mac/bg_opp.jpg);
+	height: 600px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	/*width: 60%;
+	margin: auto;*/
+}
+.opp h3{
+	font-size: 40px;
+}
+.opp_links{
+	margin-top: 15px;
+	display: flex;
+	justify-content: space-between;
+	width: 200px;
+}
+.opp_links a{
+	color: white;
+	text-decoration: none;
+}
+.supp_promo{
+	height: 450px;	
+	color: white;
+	text-align: center;	
+	background-image: url(img/bg_supp.jpg);
+	background-size: cover;
+	padding-top: 150px;
+}
+
+.supp_category{
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 300px;
+}
+.supp_item{
+	text-align: center;
+	text-decoration: none;
+	color: #0066cc;
+}
+.supp_item img{
+	height: 100px;
+}

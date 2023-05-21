@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+}
+html{
+	scroll-behavior: smooth;
+}
+.hat{
+	background: black;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 350px 15px 350px;
+}
+.hat a{
+	color: white;
+	font-size: 22px;
+	text-decoration: none;
+}
+.promo{
+	height: 700px;
+	background: url(mobs.jpg);
+	background-size: cover;
+	background-position: 50% 87%;
+}
+.info{
+	text-align: center;
+}
+h1{
+	font-size: 40px;
+}
+h2{
+	font-size: 36px;
+}
+.info a{
+	color: blue;
+	font-size: 22px;
+}
+.creap{
+	display: flex;
+	align-items: start;
+	padding: 50px 350px;
+}
+.creap img{
+	width: 400px;
+	margin-right: 50px;
+}
+
+.creap_info h3{
+	font-size: 35px;
+	margin: 0;
+}
+
+.creap_info p{
+	font-size: 22px;
+	text-align: justify;
+}
+.footer{
+	background: black;
+	color: white;
+	font-size: 22px;
+	text-align: center;
+	padding: 50px 0;
+}

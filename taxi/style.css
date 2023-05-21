@@ -1,28 +1,24 @@
-*{
-	font-family: sans-serif;
-}
-html{
-	scroll-behavior: smooth;
-}
 .hat{
-	background: black;
+	background: #000;
 	display: flex;
 	justify-content: space-between;
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 250px;
+	padding-right: 250px;
 	padding-top: 15px;
 	padding-bottom: 15px;
 	position: sticky;
 	top: 0;
+	z-index: 9999;
 }
 .hat a{
 	color: white;
 	font-size: 22px;
 	text-decoration: none;
+	transition: 0.3s;
 }
 .hat a:hover{
 	color: #ffcc00;
-	text-shadow: 0 0 10px #ffcc00;
+	text-shadow: 0 0 5px #ffcc00;
 }
 body{
 	margin: 0;
@@ -31,41 +27,38 @@ body{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 150px;
-	padding-right: 150px;
+	padding-left: 250px;
+	padding-right: 250px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-.info p{
-	margin: 0;
-	font-size: 24px;
+	box-shadow: 0 0 10px gray;
 }
 .info h1{
 	margin: 0;
 }
+.info p{
+	font-size: 26px;
+	margin: 0;
+}
 button{
 	background: #ffcc00;
-	font-size: 22px;
-	padding-left: 40px;
-	padding-right: 40px;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	font-size: 18px;
+	padding: 10px 50px;
 	border: none;
-	border-radius: 20px;
-	transition: 0.5s;
+	border-radius: 10px;
 	cursor: pointer;
+	transition: 0.5s;
 }
 button:hover{
-	box-shadow: 10px 10px 15px grey;
+	box-shadow: 0 0 10px gray;
 }
 .promo{
-	padding: 200px 300px;
-
 	background: url(img/promo_bg.png);
 	background-size: cover;
 	background-position: 50% 50%;
 	display: flex;
 	justify-content: space-between;
+	padding: 200px 250px;
 }
 .promo_work{
 	width: 300px;
@@ -75,94 +68,117 @@ button:hover{
 }
 .promo_pay{
 	width: 400px;
+	margin-right: 100px;
 }
 .promo_pay p{
-	font-size: 24px;
+	font-size: 26px;
 }
 .promo_pay b{
 	font-size: 60px;
 }
-.comfort{
-	padding: 50px 300px;
+.red{
+	color: red;
 }
-h2{
-	font-size: 40px;
+.comfort, .auto, .begin{
+	padding: 50px 300px;
 }
 .comfort_box{
 	display: flex;
 	justify-content: space-between;
-	margin-top: 30px;
+	margin-top: 50px;
 }
-.comfort_item{
-	width: 32%;
+h2{
+	font-size: 36px;
 }
-.comfort_item img{
-	height: 50px;
-}
-.comfort_item h3{
+.comfort_box_item h3{
 	font-size: 24px;
 }
-p{
-	font-size: 20px;
+.comfort_box_item p{
+	font-size: 16px;
 }
-
-.rent{
-	padding: 50px 300px;
+.comfort_box_item img{
+	height: 75px;
+	animation: scale 1s infinite;
 }
-.rent_box{
+.comfort_box_item {
+	width: 31%;
+}
+.auto_box{
 	display: flex;
 	justify-content: space-between;
 }
-.rent_box img{
-	width: 400px;
+.auto_box img{
+	height: 300px;
 }
-.red{
-	color: red;
+.auto_box_info button{
+	margin-top: 50px;
 }
-
+.auto{
+	background: rgb(225, 225, 225);
+}
 .begin{
-	padding: 50px 300px;
 	background: #424242;
 	color: white;
 }
-.begin_item{
-
+.begin p{
+	width: 600px;
+	text-align: justify;
 }
 .begin_circle{
 	background: #ffcc00;
 	height: 50px;
 	width: 50px;
-	border-radius: 100%;
 	color: #424242;
+	font-size: 26px;
+	border-radius: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	font-size: 26px;
 	font-weight: 700;
 }
-.city{
+*{
+	font-family: sans-serif;
+}
+.box{
 	padding: 50px 300px;
 }
-.city_box{
+.box_container{
 	display: flex;
 	justify-content: space-between;
-}
-.city_box_item{
 
 }
-.city_box_item a{
+.box_container_item a{
 	display: block;
-	margin-top: 15px;
-	font-size: 20px;
 	color: black;
-	text-decoration: none;
-}
-.city_box_item a:hover{
-	color: red;
+	margin-top: 15px;
+	text-decoration: none;/* убрать подчёркивания*/
+	font-size: 20px;
 }
 .footer{
-	background: #000;
-	padding: 50px 300px;
 	color: white;
+	padding: 50px 300px;
+	background: black;
 	text-align: center;
+}
+html{
+	scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+@keyframes scale{ /* вызываем анимацию с названием scale*/
+	0%{/*начало анимации*/
+		transform: scale(1);
+	}
+	50%{/*середина анимации*/
+		transform: scale(1.1);
+	}
+	100%{/*конец анимации*/
+		transform: scale(1);
+	}
 }
